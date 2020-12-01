@@ -1,3 +1,56 @@
+Install node -go to https://nodejs.org/ to dowload
+Set up your enviroment varirables if needed (open system settings system variables-
+-> PATH---> Top right select new--> copy/paste path from the folder-- :
+C:/programfiles/appdata/node) apply/save
+Open cmd and check version for  node -v
+                                npm -v   in your terminal
+Next; 
+Install ember-cli: 
+npm install -g ember-cli  (g's for globally)
+
+check version when done:
+ember -v
+
+Setup workspace:
+
+Create new directory:
+--  mkdir emberjs-mynewwebpage
+
+Switch to the directory:
+--  cd emberjs-mynewwebpage
+
+Open code editor:
+--  code .
+
+Open a terminal in your editor and type:
+ember init (this will setup all packages and dependencies, see file typ on the left)
+
+
+Quick next steps:
+create a file: 
+jsconfig.json
+create your compiler options with the following:
+{
+    "compilerOptions": {
+        "target":"es2015",
+        "experimentalDecorators": true
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
+
+now save using any of the following:
+npm start
+ember serve
+ember s
+Now open localhost4200 and you will see the startup page
+from here you can make adjustments (check templates-->application.hbs)
+remove default code and write:
+<h1>My webapp</h1>
+
+{{outlet}}
 # emberjs-tutorial
 
 This README outlines the details of collaborating on this Ember application.
